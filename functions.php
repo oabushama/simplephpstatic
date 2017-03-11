@@ -25,9 +25,9 @@ function siteName()
  */
 function pageTitle()
 {
-    $page = isset($_GET['page']) ? htmlspecialchars($_GET['page']) : 'home';
+    $page = isset($_GET['page']) ?  htmlspecialchars($_GET['page']) : 'home';
 
-    echo ucwords(str_replace('-', ' ', $page));
+    echo ucwords(str_replace('-', '  ', $page));
 }
 
 /**
